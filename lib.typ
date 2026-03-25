@@ -95,6 +95,9 @@
     show-applicator,
 )
 
-#let img(src, n: 100%, pos: center + horizon) = grid.cell(align: pos, scale(x: n, y: n, image(src)))
+#let scaled(value, n: 100%, pos: center + horizon) = grid.cell(
+    align: pos,
+    scale(x: n, y: n, value),
+)
 
 #let textbox(pos: horizon, text) = align(text, pos)
