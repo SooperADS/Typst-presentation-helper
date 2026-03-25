@@ -3,17 +3,6 @@
 
 // Layout helpers
 
-#let __layout_grid(
-    columns: auto,
-    rows: auto,
-    gutter: auto,
-    column-gutter: auto,
-    row-gutter: auto,
-    default-align: auto,
-    fill: auto,
-    ..body,
-) = {}
-
 #let __slide(is-the-last-one: false, content) = {
     content
     if not is-the-last-one {
@@ -74,7 +63,6 @@
     column-gutter: auto,
     rows: auto,
     row-gutter: auto,
-    gutter: auto,
     default-align: auto,
     fill: none,
     show-applicator: auto,
@@ -87,7 +75,6 @@
         column-gutter: column-gutter,
         rows: rows,
         row-gutter: row-gutter,
-        gutter: gutter,
         align: default-align,
         fill: fill,
         ..body
