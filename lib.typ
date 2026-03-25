@@ -82,9 +82,9 @@
     show-applicator,
 )
 
-#let scaled(value, n: 100%, pos: center + horizon) = grid.cell(
+#let scaled(value, n: 100%, pos: center + horizon, reflow: false) = grid.cell(
     align: pos,
-    scale(x: n, y: n, value),
+    scale(x: n, y: n, value, reflow: reflow),
 )
 
 #let textbox(pos: horizon, text) = align(text, pos)
