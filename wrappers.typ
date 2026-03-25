@@ -102,7 +102,7 @@
 
     show title: title-wrapper.with(
         title-color: title-color,
-        title-font-size: __value_or_default(true_header_font_size, default.header-font-size),
+        title-font-size: __value_or_default(title-font-size, true_header_font_size),
     )
 
     document

@@ -21,7 +21,7 @@
 #let page-margin = 10%
 
 #let font-size = 2em
-#let header-font-size = 1.5em
+#let header-font-size = 1.2em
 #let title-font-size = 1.7em
 
 #let margin-color = rgb("#006aff70")
