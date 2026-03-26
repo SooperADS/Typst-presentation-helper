@@ -45,7 +45,7 @@
     show-applicator: auto,
     body: auto,
 ) = {
-    set page(fill: __value_or_default(title-page-bg, default.title-page-bg), background: none)
+    set page(fill: __value_or_default(title-page-bg, default.title-page-bg), foreground: none)
     __apply_show_rule(
         __slide(text(title(body), fill: title-color), is-the-last-one: is-the-last-one),
         show-applicator,

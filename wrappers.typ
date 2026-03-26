@@ -116,7 +116,7 @@
     target-document,
 ) = {
     set page(
-        background: rotate(
+        foreground: rotate(
             __value_or_default(watermark-rotation, default.watermark-rotation),
             context text(
                 document.title + "\n" + document.author.join(", "),
@@ -132,8 +132,8 @@
     target-document
 }
 
-#let page-presentation-no-bg-wrapper(document) = {
-    set page(background: none)
+#let page-presentation-no-fg-wrapper(document) = {
+    set page(foreground: none)
     document
 }
 
